@@ -5,15 +5,18 @@
 }
 
 *::before {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -21,11 +24,12 @@ body{
     background: #fee433;
 }
 
-
 .pikachu{
-    width: 100%;
+    width: 100vw;
     height: 165px;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nose{
@@ -106,7 +110,7 @@ body{
 
 .leftLip{
     right: 50%;
-    transform: rotate(-15deg);
+    transform: rotate(-20deg);
     border-bottom-left-radius: 40px 20px;
     border-top: none;
     border-right: none;
@@ -114,7 +118,7 @@ body{
 
 .rightLip{
     left: 50%;
-    transform: rotate(15deg);
+    transform: rotate(20deg);
     border-bottom-right-radius: 40px 20px;
     border-top: none;
     border-left: none;
@@ -152,9 +156,9 @@ body{
     position: absolute;
     bottom: 0;
     width: 100px;
-    height: 100px;
+    height: 90px;
     background: #fc4a62;
     right: 50%;
     transform: translateX(50%);
-    border-radius: 300px;
+    border-radius: 50%;
 }
